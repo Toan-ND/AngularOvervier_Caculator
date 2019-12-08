@@ -1,0 +1,16 @@
+<h1>Awesome Caculator</h1>
+<div>
+  <input class="form-input" [value]="number1" type="number" (change)="setNumber1($event.target.value)">
+  <select class="form-input" [value]="nhap" (change)="setNhap($event.target.value)">
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="x">x</option>
+    <option value="/">/</option>
+  </select>
+  <input class="form-input" [value]="number2" type="number" (change)="setNumber2($event.target.value)">
+</div>
+<div>
+<input type="button" value="submit" (click)="caculate()">
+  <p>{{result}}</p>
+</div>
+
